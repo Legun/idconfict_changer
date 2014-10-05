@@ -1,0 +1,25 @@
+#!/bin/bash
+newid=1635
+for ((oldid=1600; oldid<=1617; ++oldid )) ;
+do
+sed -i "s/$oldid/$newid/g" "$1"
+newid=$[newid + 1]
+echo "Id "$newid " Changed"
+done
+
+oldid=1632
+sed -i "s/$oldid/$newid/g" "$1"
+newid=$[newid + 1]
+echo "Id "$newid " Changed"
+
+oldid=1633
+sed -i "s/$oldid/$newid/g" "$1"
+newid=$[newid + 1]
+echo "Id "$newid " Changed"
+
+for ((oldid=4069; oldid<=4079; ++oldid )) ;
+do
+sed -i "s/$oldid/$newid/g" "$1"
+newid=$[newid + 1]
+echo "Id "$newid " Changed"
+done
